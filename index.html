@@ -210,7 +210,7 @@
         height: 80vh;
      }
      .second-section{
-        margin-top: 30rem;
+        margin-top: 50rem;
      }
      .car-box{
          display: grid;
@@ -275,19 +275,59 @@ width: auto;
 
       }
      
-      @media (max-width:339px) and (min-width:290px) {
-        .car-card h1{
+      @media (max-width:340px) and (min-width:290px) {
+       header{
+        display: flex;
+        /* justify-content: space-between; */
+        gap: 70px;
+       }
+
+        nav{
+          display: none;
+        }
+        .span{
+          display: block;
+        }
+         
+        .first-section{
+        background-size: cover;
+        background-position: center;
+        height: 80vh;
+     }
+      .box button{
+         width: 12em;
+         font-size: 15px;
+         
+       }
+       .box h1{
+         width: 70vw;
         font-size: 20px;
-        margin-top:4px;
+        
+       }
+       .second-section{
+        margin-top: 30rem;
+       }
+       .second-section h1{
+           margin-top: 4rem;
+       }
+       .car-card h1{
+        font-size: 15px;
+        margin-top:9px;
       }
       .car-card  button{
-        font-size: 8px;
+        font-size: 10px;
         width: auto;
       }
       .car-card{
       width: auto;
       font-size: 13px;
      }
+      .box1{
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+      } 
+
       }
       @media (max-width:290px) and (min-width:250px) {
         nav{
@@ -299,8 +339,7 @@ width: auto;
         .box1{
             display: grid;
             grid-template-columns: auto;
-            justify-content: center;
-            /* justify-content: space-betw; */
+            justify-content: center;          
         }
         .box button{
          width: 12em;
@@ -345,7 +384,7 @@ width: auto;
      }
       .car-card h1{
         font-size: 20px;
-      }
+      } 
       }
        @media (max-width:250px) and (min-width:100px) {
         nav{

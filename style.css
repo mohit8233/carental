@@ -165,6 +165,7 @@ button span{
 }
 .car-box{
   margin-top: 20px;
+  /* scrollbar-width: none; */
   scrollbar-width: none;
   display: grid;
   gap: 20px;

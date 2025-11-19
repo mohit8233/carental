@@ -1,63 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SuperMoto</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-    <style>
-     @media (max-width:990px) and (min-width:767px)  {
-       
-        nav{
-          display: none;
-        }
-        .span{
-            display: block;
-        }
-        .box1{
-            display: grid;
-            grid-template-columns: auto auto;
-            /* justify-content: space-betw; */
-        }
-        .card1{
-            width: 50vw;
-        }
-          .card2{
-            width: 50vw;
-        }
-          .card3{
-            width: 50vw;
-        }
-          .card4{
-            width: 50vw;
-        }
-     
-     .first-section{
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zentra</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <style>
+    @media (min-width) {
+      
+    }
+    @media (max-width:992px) and (min-width:851px) {
+
+      nav {
+        display: none;
+      }
+
+      .span {
+        display: block;
+      }
+
+      .box1 {
+        display: grid;
+        grid-template-columns: auto auto;
+        /* justify-content: space-betw; */
+      }
+
+      .card1 {
+        width: 50vw;
+      }
+
+      .card2 {
+        width: 50vw;
+      }
+
+      .card3 {
+        width: 50vw;
+      }
+
+      .card4 {
+        width: 50vw;
+      }
+
+      .first-section {
         background-size: cover;
+
+      }
+
+      .car-box {
+        display: grid;
+        width: 100vw;
+        /* grid-template-columns: auto auto;
+        justify-content: space-between;
+         */
+      }
+
+      .car-sub-card1 {
+        width: 40vw;
+        /* margin-left: 30px; */
+      }
+
+      .car-sub-card2 {
+        width: 40vw;
+        margin-left: 0;
+        /* margin-right: 20px; */
+      }
+
+      .car-sub-card3 {
+        width: 40vw;
+        /* margin-left: 30px; */
+      }
+
+      .car-sub-card4 {
+        width: 40vw;
+        margin-left: 0;
+        /* margin-right: 20px; */
+      }
+
+      .car-sub-card5 {
+        width: 40vw;
+        /* margin-left: 30px; */
+      }
+
+      .forth-section h1 br {
+        display: none;
+       
+      }
+       .forth-section{
+        display: grid;
+        grid-template-columns: auto ;
+        gap: 20px;
+       }
+      .category-card {
+        margin-top: 10px;
+        display: flex;
+        gap: 0;
+         
+        justify-content:center ;
         
-     }
-     .car-box{
-         display: grid;
-         grid-template-columns: auto auto;
-     }
-     .car-sub-card1{
-      width: auto;
-     }
-     }
-     @media (max-width:766px) and (min-width:680px) {
-      nav{
-           display: none;
-     }
-      .span{
-            display: block;
-        }
-         .box1{
-            display: grid;
-            grid-template-columns: auto auto;
-            /* justify-content: space-betw; */
-        }
-       /* .box{
+      }
+    }
+
+    @media (max-width:850px) and (min-width:766px) {
+        nav {
+        display: none;
+      }
+
+      .span {
+        display: block;
+      }
+
+      .box1 {
+        display: grid;
+        grid-template-columns: auto auto;
+        /* justify-content: space-betw; */
+      }
+
+      .card1 {
+        width: 50vw;
+      }
+
+      .card2 {
+        width: 50vw;
+      }
+
+      .card3 {
+        width: 50vw;
+      }
+
+      .card4 {
+        width: 50vw;
+      }
+
+      .first-section {
+        background-size: cover;
+
+      }
+
+      .car-box {
+        display: grid;
+        width: 100vw;
+        /* grid-template-columns: auto auto;
+        justify-content: space-between; */
+        /* overflow: hidden; */
+      }
+
+      .car-sub-card1 {
+        width: 40vw;
+        /* margin-left: 30px; */
+      }
+
+      .car-sub-card2 {
+        width: 40vw;
+        margin-left: 0;
+        /* margin-right: 20px; */
+      }
+
+      .car-sub-card3 {
+        width: 40vw;
+        /* margin-left: 30px; */
+      }
+
+      .car-sub-card4 {
+        width: 40vw;
+        margin-left: 0;
+        /* margin-right: 20px; */
+      }
+
+      .car-sub-card5 {
+        width: 40vw;
+        /* margin-left: 30px; */
+      }
+      
+      .forth-section h1 br {
+        display: none;
+       
+      }
+       .forth-section{
+        display: grid;
+        grid-template-columns: auto ;
+        gap: 20px;
+       }
+      .category-card {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: auto auto;
+        /* gap: 100px; */
+        justify-content: space-around;
+      }
+
+      .category-box1 {
+        width: 30vw;
+        height: 50vh;
+        font-size: 30px;
+      }
+
+      .category-box2 {
+        width: 30vw;
+        height: 50vh;
+        font-size: 30px;
+      }
+
+      .category-box3 {
+        width: 30vw;
+        height: 50vh;
+        font-size: 30px;
+      }
+
+      .category-box4 {
+        width: 30vw;
+        height: 50vh;
+        font-size: 30px;
+      }
+
+      .category-box1 img {
+        border-radius: 100%;
+        width: 15vw;
+      }
+
+      .category-box2 img {
+        border-radius: 100%;
+        width: 15vw;
+      }
+
+      .category-box3 img {
+        border-radius: 100%;
+        width: 15vw;
+      }
+
+      .category-box4 img {
+        border-radius: 100%;
+        width: 15vw;
+      }
+
+    }
+
+    @media (max-width:766px) and (min-width:680px) {
+      nav {
+        display: none;
+      }
+
+      .span {
+        display: block;
+      }
+
+      .box1 {
+        display: grid;
+        grid-template-columns: auto auto;
+        /* justify-content: space-betw; */
+      }
+
+      /* .box{
          text-align: center;
          gap: 10px;
        }
@@ -65,551 +259,1382 @@
          margin-left: -8rem;
          width: 12em;
        } */
-       .first-section{
+      .first-section {
         background-size: cover;
+
+      }
+
+      /* .car-box {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        justify-content: center;
+        overflow-x: scroll;
+        scrollbar-width: none;
+        overflow-y: hidden;
+      } */
+       .car-box {
+        /* display: grid; */
+        width: 100vw;
         
-     }
-     .car-box{
-         display: grid;
-         grid-template-columns:  auto;
-         justify-content: center;
-         overflow-x: scroll;
-         scrollbar-width: none;
-         overflow-y: hidden;
-     }
-         .car-sub-card1{
-      width: auto;
-     }
-     }
-     @media (max-width:680px) and (min-width:567px) {
-        nav{
-           display: none;
-     }
-      .span{
-            display: block;
-        }
-         .box1{
-            display: grid;
-            grid-template-columns: auto auto;
-            /* justify-content: space-betw; */
-        }
-       /* .box{
+        
+        
+      }
+
+      .car-sub-card1 {
+        width: 60vw;
+        
+      } 
+
+      .car-sub-card2 {
+        width: 60vw;
+        margin-left: 0;
+        /* margin-right: 20px; */
+      }
+
+      .car-sub-card3 {
+        width: 60vw;
+        /* margin-left: 30px; */
+      }
+
+      .car-sub-card4 {
+        width: 60vw;
+        margin-left: 0;
+        /* margin-right: 20px; */
+      }
+
+      .car-sub-card5 {
+        width: 60vw;
+        /* margin-left: 30px; */
+      }
+      .forth-section {
+        display: grid;
+        margin-top: 20px;
+        grid-template-columns: auto;
+
+      }
+
+      .forth-section h1 br {
+        display: none;
+      }
+
+      .category-card {
+        margin-top: 10px;
+        display: grid;
+        gap: 50px;
+        justify-self: center;
+        grid-template-columns: auto auto;
+        justify-content: center;
+
+        justify-content: space-between;
+      }
+      
+     /* .category-card {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 100px;
+        justify-content: center;
+      } */
+      .category-box1 {
+        width: 40vw;
+        height: 50vh;
+        font-size: 30px;
+      }
+
+      .category-box2 {
+        width: 40vw;
+        height: 50vh;
+        font-size: 30px;
+      }
+
+      .category-box3 {
+        width: 40vw;
+        height: 50vh;
+        font-size: 30px;
+      }
+
+      .category-box4 {
+        width: 40vw;
+        height: 50vh;
+        font-size: 30px;
+      }
+
+      .category-box1 img {
+        border-radius: 100%;
+        width: 20vw;
+      }
+
+      .category-box2 img {
+        border-radius: 100%;
+        width: 20vw;
+      }
+
+      .category-box3 img {
+        border-radius: 100%;
+        width: 20vw;
+      }
+
+      .category-box4 img {
+        border-radius: 100%;
+        width: 20vw;
+      }
+    }
+    @media (max-width:680px) and (min-width:567px) {
+      nav {
+        display: none;
+      }
+
+      .span {
+        display: block;
+      }
+
+      .box1 {
+        display: grid;
+        grid-template-columns: auto auto;
+        /* justify-content: space-betw; */
+      }
+
+      /* .box{
          text-align: center;
          
        } */
-       .box h1{
+      .box h1 {
         width: 90vw;
-        
-       }
-       .box button{
-        
-         width: 12em;
-         margin-top: 2rem;
-       }
-       .first-section{
+
+      }
+
+      .box button {
+
+        width: 12em;
+        margin-top: 2rem;
+      }
+
+      .first-section {
         background-size: cover;
         background-position: center;
         height: 110vh;
-     }
-     .car-box{
-         display: grid;
-         grid-template-columns: auto;
-         justify-content: center;
-          overflow-x: scroll;
-         scrollbar-width: none;
-         overflow-y: hidden;
-     }
-       .car-sub-card1{
-      width: auto;
-     }
-     }
-      @media (max-width:600px) {
-        .box{
-            text-align: center;
-        }
-        .box h1{
-            width: 80vw;
-        }
-          .car-sub-card1{
-      width: auto;
-     }
       }
-      @media (max-width:566px) and (min-width:450px) {
-        nav{
-            display: none;
-        }
-        .span{
-            display: block;
-        }
-        .second-section h1{
-            width: 90vw;
-            margin-right: 8px;
-            text-align: center;
-        }
-        .second-section{
-            text-align: center;
-        }
-         .box1{
-            display: grid;
-            grid-template-columns: auto auto;
-            /* justify-content: space-betw; */
-        }
-        .car-box{
-         display: grid;
-         grid-template-columns: auto;
-         justify-content: center;
-          overflow-x: scroll;
-         scrollbar-width: none;
-         overflow-y: hidden;
-     }
-       .car-sub-card1{
-      width: auto;
-     }
-     .car-card{
-      width: auto;
-      font-size: 18px;
-     }
-      .car-card h1{
-        font-size: 20px;
-      }
-      .mini-car-card{
-        width: auto;
-      }
-      .mini-car-card h3{
-        font-size: 15px;
-        width: auto;
-      }
-      }
-      @media (max-width:450px) and (min-width:340px) {
-        nav{
-            display: none;
-        }
-        .span{
-            display: block;
-        }
-         .box1{
-            display: grid;
-            grid-template-columns: auto;
-            justify-content: center;
-            /* justify-content: space-betw; */
-        }
+
+  
+
+        .car-box {
       
-         .box button{
-         width: 12em;
-         font-size: 15px;
-         
-       }
-       .box h1{
-         width: 70vw;
-        font-size: 20px;
-        
-       }
-        .first-section{
-        background-size: cover;
-        background-position: center;
-        height: 80vh;
-     }
-     .second-section{
-        margin-top: 50rem;
-     }
-     .car-box{
-         display: grid;
-         grid-template-columns: auto;
-         justify-content: center;
-          overflow-x: scroll;
-         scrollbar-width: none;
-         overflow-y: hidden;
-     }
-       .car-sub-card1{
-      width: auto;
-     }
-      .mini-car-card{
-        width: auto;
-         display: flex;
-        justify-content: space-around;
-      }
-      .mini-car-card h3{
-        font-size: 13px;
+        width: 100vw;
        
-        width: auto;
-      }
-      .mini-car-card h6{
-        font-size: 13px;
-      }
-       .car-card{
-      width: auto;
-      font-size: 18px;
-     }
-      .car-card h1{
-        font-size: 20px;
-        margin-top:9px;
-      }
-      .car-card  button{
-        font-size: 10px;
-        width: auto;
-      }
-      .gear-box1{
-  display: flex;
-  width: auto;
-  font-size: 15px;
-}
-.gear-box1 img{
-  width: 40px;
-}
-.gear-box2 img{
-  width: 40px;
-}
-.gear-box3 img{
-  width: 40px;
-}
-.gear-box2{
-  display: flex;
-  width: auto;
-   font-size: 15px;
-}
-.gear-box3{
-display: flex;
-width: auto;
- font-size: 15px;
-}
-
-      }
-     
-      @media (max-width:340px) and (min-width:290px) {
-       header{
-        display: flex;
-        /* justify-content: space-between; */
-        gap: 70px;
-       }
-
-        nav{
-          display: none;
-        }
-        .span{
-          display: block;
-        }
-         
-        .first-section{
-        background-size: cover;
-        background-position: center;
-        height: 80vh;
-     }
-      .box button{
-         width: 12em;
-         font-size: 15px;
-         
-       }
-       .box h1{
-         width: 70vw;
-        font-size: 20px;
         
-       }
-       .second-section{
-        margin-top: 30rem;
-       }
-       .second-section h1{
-           margin-top: 4rem;
-       }
-       .car-card h1{
-        font-size: 15px;
-        margin-top:9px;
+        
       }
-      .car-card  button{
-        font-size: 10px;
+
+      .car-sub-card1 {
+        width: 90vw;
+        margin-left: -30px;
+      } 
+
+      .car-sub-card2 {
+        width: 90vw;
+        margin-left: 0;
+        /* margin-right: 20px; */
+      }
+
+      .car-sub-card3 {
+        width: 90vw;
+        /* margin-left: 30px; */
+      }
+
+      .car-sub-card4 {
+        width: 90vw;
+        margin-left: 0;
+        /* margin-right: 20px; */
+      }
+
+      .car-sub-card5 {
+        width: 90vw;
+        /* margin-left: 30px; */
+      }
+      .forth-section {
+        display: grid;
+        margin-top: 20px;
+        grid-template-columns: auto;
+
+      }
+
+      .forth-section h1 br {
+        display: none;
+      }
+
+      .category-card {
+        margin-top: 10px;
+        display: grid;
+        gap: 50px;
+        justify-self: center;
+        grid-template-columns: auto auto;
+        justify-content: center;
+
+        justify-content: space-between;
+      }
+      
+     /* .category-card {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 100px;
+        justify-content: center;
+      } */
+      .category-box1 {
+        width: 40vw;
+        height: 50vh;
+        font-size: 30px;
+      }
+
+      .category-box2 {
+        width: 40vw;
+        height: 50vh;
+        font-size: 30px;
+      }
+
+      .category-box3 {
+        width: 40vw;
+        height: 50vh;
+        font-size: 30px;
+      }
+
+      .category-box4 {
+        width: 40vw;
+        height: 50vh;
+        font-size: 30px;
+      }
+
+      .category-box1 img {
+        border-radius: 100%;
+        width: 20vw;
+      }
+
+      .category-box2 img {
+        border-radius: 100%;
+        width: 20vw;
+      }
+
+      .category-box3 img {
+        border-radius: 100%;
+        width: 20vw;
+      }
+
+      .category-box4 img {
+        border-radius: 100%;
+        width: 20vw;
+      }
+    }
+
+    @media (max-width:600px) {
+      .box {
+        text-align: center;
+      }
+
+      .box h1 {
+        width: 80vw;
+      }
+
+      .car-sub-card1 {
         width: auto;
       }
-      .car-card{
-      width: auto;
-      font-size: 13px;
-     }
-      .box1{
+    }
+
+    @media (max-width:566px) and (min-width:450px) {
+      nav {
+        display: none;
+      }
+
+      .span {
+        display: block;
+      }
+
+      .second-section h1 {
+        width: 90vw;
+        margin-right: 8px;
+        text-align: center;
+      }
+
+      .second-section {
+        text-align: center;
+      }
+
+      .box1 {
+        display: grid;
+        grid-template-columns: auto auto;
+        /* justify-content: space-betw; */
+      }
+
+      /* .car-box {
         display: grid;
         grid-template-columns: auto;
         justify-content: center;
-      } 
+        overflow-x: scroll;
+        scrollbar-width: none;
+        overflow-y: hidden;
+      } */
 
+      /* .car-sub-card1 {
+        width: auto;
+      } */
+
+      .car-card {
+        width: auto;
+        font-size: 18px;
       }
-      @media (max-width:290px) and (min-width:250px) {
-        nav{
-          display: none;
-        }
-        .span{
-          display: block;
-        }
-        .box1{
-            display: grid;
-            grid-template-columns: auto;
-            justify-content: center;          
-        }
-        .box button{
-         width: 12em;
-         font-size: 15px;
 
-        
-       }
-       .box h1{
-         width: 70vw;
+      .car-card h1 {
         font-size: 20px;
-        
-       }
-       .first-section{
-        background-size: cover;
-        background-position: center;
-        height: 80vh;
-     }
-     .second-section{
-        margin-top: 30rem;
-     }
-     .car-box{
-         display: grid;
-         grid-template-columns: auto;
-         justify-content: center;
-          overflow-x: scroll;
-         scrollbar-width: none;
-         overflow-y: hidden;
-     }
-       .car-sub-card1{
-      width: auto;
-     }
-      .mini-car-card{
+      }
+
+      .mini-car-card {
         width: auto;
       }
-      .mini-car-card h3{
+
+      .mini-car-card h3 {
         font-size: 15px;
         width: auto;
       }
-       .car-card{
-      width: auto;
-      font-size: 18px;
-     }
-      .car-card h1{
-        font-size: 20px;
-      } 
-      }
-       @media (max-width:250px) and (min-width:100px) {
-        nav{
-          display: none;
-        }
-        .span{
-          display: block;
-        }
-        .box1{
-            display: grid;
-            grid-template-columns: auto;
-            justify-content: center;
-            /* justify-content: space-betw; */
-        }
-        .box button{
-         width: 12em;
-         font-size: 15px;
-
-         margin-right: 19rem;
-       }
-       .box h1{
-         width: 70vw;
-        font-size: 20px;
+        .car-box {
+        /* display: grid; */
+        width: 100vw;
         
-       }
-       .first-section{
+      }
+
+      .car-sub-card1 {
+        width: 90vw;
+        
+      } 
+
+      .car-sub-card2 {
+        width: 90vw;
+        margin-left: 0;
+        /* margin-right: 20px; */
+      }
+
+      .car-sub-card3 {
+        width: 90vw;
+        /* margin-left: 30px; */
+      }
+
+      .car-sub-card4 {
+        width: 90vw;
+        margin-left: 0;
+        /* margin-right: 20px; */
+      }
+
+      .car-sub-card5 {
+        width: 90vw;
+        /* margin-left: 30px; */
+      }
+      .forth-section {
+        display: grid;
+        margin-top: 20px;
+        grid-template-columns: auto;
+
+      }
+
+      .forth-section h1 br {
+        display: none;
+      }
+
+      .category-card {
+        margin-top: 10px;
+        display: grid;
+        gap: 50px;
+        justify-self: center;
+        grid-template-columns: auto auto;
+        justify-content: center;
+
+        justify-content: space-between;
+      }
+      
+     /* .category-card {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 100px;
+        justify-content: center;
+      } */
+      .category-box1 {
+        width: 40vw;
+        height: 50vh;
+        font-size: 30px;
+      }
+
+      .category-box2 {
+        width: 40vw;
+        height: 50vh;
+        font-size: 30px;
+      }
+
+      .category-box3 {
+        width: 40vw;
+        height: 50vh;
+        font-size: 30px;
+      }
+
+      .category-box4 {
+        width: 40vw;
+        height: 50vh;
+        font-size: 30px;
+      }
+
+      .category-box1 img {
+        border-radius: 100%;
+        width: 20vw;
+      }
+
+      .category-box2 img {
+        border-radius: 100%;
+        width: 20vw;
+      }
+
+      .category-box3 img {
+        border-radius: 100%;
+        width: 20vw;
+      }
+
+      .category-box4 img {
+        border-radius: 100%;
+        width: 20vw;
+      }
+    }
+
+    @media (max-width:450px) and (min-width:340px) {
+      nav {
+        display: none;
+      }
+
+      .span {
+        display: block;
+      }
+
+      .box1 {
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        /* justify-content: space-betw; */
+      }
+
+      .box button {
+        width: 12em;
+        font-size: 15px;
+
+      }
+
+      .box h1 {
+        width: 70vw;
+        font-size: 20px;
+
+      }
+
+      .first-section {
         background-size: cover;
         background-position: center;
         height: 80vh;
-     }
-     .second-section{
+      }
+
+      .second-section {
+        margin-top: 40rem;
+      }
+
+      /* .car-box {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        justify-content: center;
+        overflow-x: scroll;
+        scrollbar-width: none;
+        overflow-y: hidden;
+      }
+
+      .car-sub-card1 {
+        width: auto;
+      } */
+
+      .mini-car-card {
+        width: auto;
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .mini-car-card h3 {
+        font-size: 13px;
+
+        width: auto;
+      }
+
+      .mini-car-card h6 {
+        font-size: 13px;
+      }
+
+      .car-card {
+        width: auto;
+        font-size: 18px;
+      }
+
+      .car-card h1 {
+        font-size: 20px;
+        margin-top: 9px;
+      }
+
+      .car-card button {
+        font-size: 10px;
+        width: auto;
+      }
+
+      .gear-box1 {
+        display: flex;
+        width: auto;
+        font-size: 15px;
+      }
+
+      .gear-box1 img {
+        width: 40px;
+      }
+
+      .gear-box2 img {
+        width: 40px;
+      }
+
+      .gear-box3 img {
+        width: 40px;
+      }
+
+      .gear-box2 {
+        display: flex;
+        width: auto;
+        font-size: 15px;
+      }
+
+      .gear-box3 {
+        display: flex;
+        width: auto;
+        font-size: 15px;
+      }
+        .car-box {
+        /* display: grid; */
+        width: 100vw;
+        
+        
+        
+      }
+
+      .car-sub-card1 {
+        width: 60vw;
+        
+      } 
+
+      .car-sub-card2 {
+        width: 60vw;
+        margin-left: 0;
+        /* margin-right: 20px; */
+      }
+
+      .car-sub-card3 {
+        width: 60vw;
+        /* margin-left: 30px; */
+      }
+
+      .car-sub-card4 {
+        width: 60vw;
+        margin-left: 0;
+        /* margin-right: 20px; */
+      }
+
+      .car-sub-card5 {
+        width: 60vw;
+        /* margin-left: 30px; */
+      }
+      .forth-section {
+        display: grid;
+        margin-top: 20px;
+        grid-template-columns: auto;
+
+      }
+
+      .forth-section h1 br {
+        display: none;
+      }
+
+      .category-card {
+        margin-top: 10px;
+        display: grid;
+        gap: 50px;
+        justify-self: center;
+        grid-template-columns: auto auto;
+        justify-content: center;
+
+        justify-content: space-between;
+      }
+      
+     /* .category-card {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 100px;
+        justify-content: center;
+      } */
+      .category-box1 {
+        width: 40vw;
+        height: 40vh;
+        font-size: 20px;
+      }
+
+      .category-box2 {
+        width: 40vw;
+        height: 40vh;
+        font-size: 20px;
+      }
+
+      .category-box3 {
+        width: 40vw;
+        height: 40vh;
+        font-size: 20px;
+      }
+
+      .category-box4 {
+        width: 40vw;
+        height: 40vh;
+        font-size: 20px;
+      }
+
+      .category-box1 img {
+        border-radius: 100%;
+        width: 20vw;
+      }
+
+      .category-box2 img {
+        border-radius: 100%;
+        width: 20vw;
+      }
+
+      .category-box3 img {
+        border-radius: 100%;
+        width: 20vw;
+      }
+
+      .category-box4 img {
+        border-radius: 100%;
+        width: 20vw;
+      }
+       .car-box {
+        /* display: grid; */
+        width: 100vw;
+        
+      }
+
+      .car-sub-card1 {
+        width: 90vw;
+        margin-left: 15px;
+      } 
+
+      .car-sub-card2 {
+        width: 90vw;
+        margin-left: 0;
+        /* margin-right: 20px; */
+      }
+
+      .car-sub-card3 {
+        width: 90vw;
+        /* margin-left: 30px; */
+      }
+
+      .car-sub-card4 {
+        width: 90vw;
+        margin-left: 0;
+        /* margin-right: 20px; */
+      }
+
+      .car-sub-card5 {
+        width: 90vw;
+        /* margin-left: 30px; */
+      }
+
+    }
+
+    @media (max-width:340px) and (min-width:290px) {
+      header {
+        display: flex;
+        /* justify-content: space-between; */
+        gap: 70px;
+      }
+
+      nav {
+        display: none;
+      }
+
+      .span {
+        display: block;
+      }
+
+      .first-section {
+        background-size: cover;
+        background-position: center;
+        height: 80vh;
+      }
+
+      .box button {
+        width: 12em;
+        font-size: 15px;
+
+      }
+
+      .box h1 {
+        width: 70vw;
+        font-size: 20px;
+
+      }
+
+      .second-section {
         margin-top: 30rem;
-     }
-     .car-box{
-         display: grid;
-         grid-template-columns: auto;
-         justify-content: center;
-          overflow-x: scroll;
-         scrollbar-width: none;
-         overflow-y: hidden;
-     }
-       .car-sub-card1{
-      width: auto;
-     }
+      }
+
+      .second-section h1 {
+        margin-top: 4rem;
+      }
+
+      .car-card h1 {
+        font-size: 15px;
+        margin-top: 9px;
+      }
+
+      .car-card button {
+        font-size: 10px;
+        width: auto;
+      }
+
+      .car-card {
+        width: auto;
+        font-size: 13px;
+      }
+
+      .box1 {
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+      }
+      .forth-section{
+        display: grid;
+        grid-template-columns: auto;
+      }
+       .forth-section h1 br {
+        display: none;
+      }
+      .category-card {
+        margin-top: 10px;
+        display: grid;
+        gap: 50px;
+        
+        justify-self: center;
+        grid-template-columns: auto auto;
+        justify-content: center;
+        justify-content: space-between;
+      }
+      .category-box1 {
+        width: 35vw;
+        height: 30vh;
+        font-size: 10px;
+        /* font-size: 30px; */
+      }
+
+      .category-box2 {
+        width: 35vw;
+        height: 30vh;
+        font-size: 10px;
+        /* font-size: 30px; */
+      }
+
+      .category-box3 {
+        width: 35vw;
+        height: 30vh;
+        /* font-size: 30px; */
+        font-size: 10px;
+      }
+
+      .category-box4 {
+        width: 35vw;
+        height: 30vh;
+        font-size: 10px;
+         
+      }
+      .category-box1 img {
+        border-radius: 100%;
+        width: 17vw;
+        /* margin-top: 10px; */
+      }
+
+      .category-box2 img {
+        border-radius: 100%;
+        width: 17vw;
+      }
+
+      .category-box3 img {
+        border-radius: 100%;
+
+        width: 17vw;
+      }
+
+      .category-box4 img {
+        border-radius: 100%;
+        width: 17vw;
+        /* margin-bottom: 20px; */
+      }
+       .car-box {
+        /* display: grid; */
+        width: 100vw;
+        margin-right: 0x;
+      }
+
+      .car-sub-card1 {
+        width: 90vw;
+        margin-left: 15px;
+      } 
+
+      .car-sub-card2 {
+        width: 90vw;
+        margin-left: 0;
+        /* margin-right: 20px; */
+      }
+
+      .car-sub-card3 {
+        width: 90vw;
+        /* margin-left: 30px; */
+      }
+
+      .car-sub-card4 {
+        width: 90vw;
+        margin-left: 0;
+        /* margin-right: 20px; */
+      }
+
+      .car-sub-card5 {
+        width: 90vw;
+        margin-right: 0x;
+      }
+      /* .gear-box1 {
+        display: flex;
+        width: auto;
+        font-size: 15px;
+      }
+
+      .gear-box1 img {
+        width: 40px; */
+      /* }
+
+      .gear-box2 img {
+        width: 40px;
+      }
+
+      .gear-box3 img {
+        width: 40px;
+      }
+
+      .gear-box2 {
+        display: flex;
+        width: auto;
+        font-size: 15px;
+      }
+
+      .gear-box3 {
+        display: flex;
+        width: auto;
+        font-size: 15px;
+      } */
+      
+      .mini-car-card1 {
+        display: flex;
+        justify-content: space-between;
+        
+      }
      
-      .mini-car-card{
-        width: auto;
+      .mini-car-card1 h3 {
+        font-size: 12px;
+        padding-left: 10px;
       }
-      .mini-car-card h3{
+
+      .mini-car-card1 h6 {
+        font-size: 12px;
+      }
+       .mini-car-card2 {
+        display: flex;
+        justify-content: space-between;
+        
+      }
+     
+      .mini-car-card2 h3 {
+        font-size: 12px;
+        padding-left: 10px;
+      }
+
+      .mini-car-card2 h6 {
+        font-size: 12px;
+      }
+      .mini-car-card3 {
+        display: flex;
+        justify-content: space-between;
+        
+      }
+     
+      .mini-car-card3 h3 {
+        font-size: 12px;
+        padding-left: 10px;
+      }
+
+      .mini-car-card3 h6 {
+        font-size: 12px;
+      }
+      .mini-car-card4 {
+        display: flex;
+        justify-content: space-between;
+        
+      }
+     
+      .mini-car-card4 h3 {
+        font-size: 12px;
+        padding-left: 10px;
+      }
+
+      .mini-car-card4 h6 {
+        font-size: 12px;
+      }
+      .mini-car-card5 {
+        display: flex;
+        justify-content: space-between;
+        
+      }
+     
+      .mini-car-card5 h3 {
+        font-size: 12px;
+        padding-left: 10px;
+      }
+
+      .mini-car-card5 h6 {
+        font-size: 12px;
+        padding-right: 10px;
+      }
+      /* .car-card {
+        width: auto;
+        font-size: 18px;
+      }
+
+      .car-card h1 {
+        font-size: 20px;
+        margin-top: 9px;
+      }
+
+      .car-card button {
+        font-size: 10px;
+        width: auto;
+      } */
+
+      .gear-box1 {
+        display: flex;
+        width: auto;
+        font-size: 10px;
+      }
+
+      .gear-box1 img {
+        width: 30px;
+      }
+
+      .gear-box2 img {
+        width: 30px;
+      }
+
+      .gear-box3 img {
+        width: 30px;
+      }
+
+      .gear-box2 {
+        display: flex;
+        width: auto;
+        font-size: 10px;
+      }
+
+      .gear-box3 {
+        display: flex;
+        width: auto;
+        font-size: 10px;
+      }
+    }
+
+    @media (max-width:290px) and (min-width:250px) {
+      nav {
+        display: none;
+      }
+
+      .span {
+        display: block;
+      }
+
+      .box1 {
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+      }
+
+      .box button {
+        width: 12em;
         font-size: 15px;
-        width: auto;
+
+
       }
-       .car-card{
-      width: auto;
-      font-size: 18px;
-     }
-      .car-card h1{
+
+      .box h1 {
+        width: 70vw;
         font-size: 20px;
 
       }
+
+      .first-section {
+        background-size: cover;
+        background-position: center;
+        height: 80vh;
       }
-    </style>
+
+      .second-section {
+        margin-top: 30rem;
+      }
+
+      .car-box {
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        overflow-x: scroll;
+        scrollbar-width: none;
+        overflow-y: hidden;
+      }
+
+      .car-sub-card1 {
+        width: auto;
+      }
+
+      .mini-car-card {
+        width: auto;
+      }
+
+      .mini-car-card h3 {
+        font-size: 15px;
+        width: auto;
+      }
+
+      .car-card {
+        width: auto;
+        font-size: 18px;
+      }
+
+      .car-card h1 {
+        font-size: 20px;
+      }
+    }
+
+    @media (max-width:250px) and (min-width:100px) {
+      nav {
+        display: none;
+      }
+
+      .span {
+        display: block;
+      }
+
+      .box1 {
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        /* justify-content: space-betw; */
+      }
+
+      .box button {
+        width: 12em;
+        font-size: 15px;
+
+        margin-right: 19rem;
+      }
+
+      .box h1 {
+        width: 70vw;
+        font-size: 20px;
+
+      }
+
+      .first-section {
+        background-size: cover;
+        background-position: center;
+        height: 80vh;
+      }
+
+      .second-section {
+        margin-top: 30rem;
+      }
+
+      .car-box {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        justify-content: center;
+        overflow-x: scroll;
+        scrollbar-width: none;
+        overflow-y: hidden;
+      }
+
+      .car-sub-card1 {
+        width: auto;
+      }
+
+      .mini-car-card {
+        width: auto;
+      }
+
+      .mini-car-card h3 {
+        font-size: 15px;
+        width: auto;
+      }
+
+      .car-card {
+        width: auto;
+        font-size: 18px;
+      }
+
+      .car-card h1 {
+        font-size: 20px;
+
+      }
+    }
+  </style>
 </head>
+
 <body>
-    <header>
-        <div class="logo"><img src="./Screenshot_2025-10-31_221352-removebg-preview.png" alt=""></div>
-        <nav>
-            <ul>
-                <li><a href="ome">Home</a></li>
-                <li><a href="About">About</a></li>
-                <li><a href="Cars">Cars</a></li>
-                <li><a href="Contact">Contact</a></li>
-            </ul>
-        </nav>
-         <span class="span"><i class="fa-solid fa-bars" style="color: #000000;"></i></span>
-    </header>
-    
-    <section class="first-section">
-          <div class="box">
-           <h1>Quick and affordable <br> car rentals</h1>
-           <button>Book your ride now <span class="span1">↗</span> </button>
+  <header>
+    <div class="logo"><img src="./Screenshot_2025-10-31_221352-removebg-preview.png" alt=""></div>
+    <nav>
+      <ul>
+        <li><a href="ome">Home</a></li>
+        <li><a href="About">About</a></li>
+        <li><a href="Cars">Cars</a></li>
+        <li><a href="Contact">Contact</a></li>
+      </ul>
+    </nav>
+    <span class="span"><i class="fa-solid fa-bars" style="color: #000000;"></i></span>
+  </header>
+
+  <section class="first-section">
+    <div class="box">
+      <h1>Quick and affordable <br> car rentals</h1>
+      <button>Book your ride now <span class="span1">↗</span> </button>
+    </div>
+  </section>
+  <section class="second-section">
+    <h1>Experience comfort, flexibility, and unbeatable <br> rates—only with our city car rentals</h1>
+    <div class="box1">
+      <div class="card1">
+        <img src="https://cdn.prod.website-files.com/66dc179a1d6aa88848a4efac/6792312eb7130ce42ca98c25_feature-01.svg"
+          alt="">
+        <h2>Well maintained vehicles</h2>
+        <p>Every car is carefully <br> maintained and serviced for <br> your safety and comfort</p>
+      </div>
+      <div class="card2">
+        <img src="https://cdn.prod.website-files.com/66dc179a1d6aa88848a4efac/67502a4df18d537616f62575_feature-02.svg"
+          alt="">
+        <h2>Easy online booking</h2>
+        <p>Car booking made easy <br> with our quick and user <br>-friendly online system.</p>
+      </div>
+      <div class="card3">
+        <img src="https://cdn.prod.website-files.com/66dc179a1d6aa88848a4efac/67502a4da12a058ea3436e0e_feature-03.svg"
+          alt="">
+        <h2>Affordable pricing</h2>
+        <p>Enjoy competitive rates with no <br> hidden fees. Rent the perfect car <br> without breaking the bank.</p>
+      </div>
+      <div class="card4">
+        <img src="https://cdn.prod.website-files.com/66dc179a1d6aa88848a4efac/67502a4db4828ad6c7f95f47_feature-04.svg"
+          alt="">
+        <h2>24/7 support</h2>
+        <p>We’re here to assist you anytime,<br> anywhere. Drive with peace of <br> mind knowing help is just a call
+          away.</p>
+      </div>
+    </div>
+  </section>
+  <section class="third-section">
+    <div class="car-card">
+      <h1>Our rental car collection</h1>
+      <a href="c"><button>View all vehicles<span class="span1">↗</span> </button></a>
+    </div>
+    <div class="car-box">
+      <div class="car-sub-card1">
+        <img class="img" width="90%"
+          src="https://cdn.prod.website-files.com/66dc179a1d6aa88848a4efb4/675d24cd3828c73bb6a6df29_car-07.avif" alt="">
+        <div class="mini-car-card1">
+          <h3>Hyundai Verna</h3>
+          <h6>$195 <span>/per day</span></h6>
         </div>
-    </section>
-   <section class="second-section">
-             <h1>Experience comfort, flexibility,  and unbeatable <br> rates—only with our city car rentals</h1>
-          <div class="box1">
-            <div class="card1">
-                <img src="https://cdn.prod.website-files.com/66dc179a1d6aa88848a4efac/6792312eb7130ce42ca98c25_feature-01.svg" alt="">
-                <h2>Well maintained vehicles</h2>
-                <p>Every car is carefully <br> maintained and serviced for <br> your safety and comfort</p>
-            </div>
-            <div class="card2">
-                <img src="https://cdn.prod.website-files.com/66dc179a1d6aa88848a4efac/67502a4df18d537616f62575_feature-02.svg" alt="">
-                <h2>Easy online booking</h2>
-                <p>Car booking made easy <br> with our quick and user <br>-friendly online system.</p>
-            </div>
-            <div class="card3">
-                 <img src="https://cdn.prod.website-files.com/66dc179a1d6aa88848a4efac/67502a4da12a058ea3436e0e_feature-03.svg" alt="">
-                 <h2>Affordable pricing</h2>
-                  <p>Enjoy competitive rates with no <br> hidden fees. Rent the perfect car <br> without breaking the bank.</p>
-            </div>
-            <div class="card4">
-                <img src="https://cdn.prod.website-files.com/66dc179a1d6aa88848a4efac/67502a4db4828ad6c7f95f47_feature-04.svg" alt="">
-                  <h2>24/7 support</h2>
-                   <p>We’re here to assist you anytime,<br> anywhere. Drive with peace of <br> mind knowing help is just a call away.</p>
-            </div>
+        <div class="mini-card1">
+          <div class="gear-box1">
+            <img src="https://cdn.prod.website-files.com/66dc179a1d6aa88848a4efac/6750396b4ddf4c46d50f6cc4_car-seat.svg"
+              alt="">
+            <p>Seat <br><span>4</span></p>
           </div>
-   </section>
-   <section class="third-section">
-          <div class="car-card">
-             <h1>Our rental car collection</h1>
-              <a href="c"><button>View all vehicles<span class="span1">↗</span> </button></a>
+
+          <div class="gear-box2">
+            <img src="https://cdn.prod.website-files.com/66dc179a1d6aa88848a4efac/6750396bcc42b344a21c720d_gearbox.svg"
+              alt="">
+            <h5>
+              <p>Gearbox</p><br> Automatic
+            </h5>
           </div>
-          <div class="car-box">
-            <div class="car-sub-card1">
-              <img class="img" width="90%" src="https://cdn.prod.website-files.com/66dc179a1d6aa88848a4efb4/675d24cd3828c73bb6a6df29_car-07.avif" alt="">
-             <div class="mini-car-card">
-               <h3>Hyundai Verna</h3>
-               <h6>$195 <span >/per day</span></h6>
-             </div>
-             <div class="mini-card1">
-                <div class="gear-box1">
-                   <img src="https://cdn.prod.website-files.com/66dc179a1d6aa88848a4efac/6750396b4ddf4c46d50f6cc4_car-seat.svg" alt="">
-              <p>Seat <br><span>4</span></p>
-                </div>
-             
-              <div class="gear-box2">
-                <img src="https://cdn.prod.website-files.com/66dc179a1d6aa88848a4efac/6750396bcc42b344a21c720d_gearbox.svg" alt="">
-               <h5><p>Gearbox</p><br> Automatic</h5>
-              </div>
-               <div class="gear-box3">
-                <img src="https://cdn.prod.website-files.com/66dc179a1d6aa88848a4efac/6750396bef54164e709fd920_luggage.svg" alt="">
-                <h4><p>Luggage</p><br>3 bags</h4>
-               </div>
-             </div>
-            </div>
-           <div class="car-sub-card1">
-              <img class="img" width="90%" src="https://cdn.prod.website-files.com/66dc179a1d6aa88848a4efb4/675d246a08777aecdb41d97f_car-01.avif" alt="">
-             <div class="mini-car-card">
-               <h3>Compact city cruiser</h3>
-               <h6>$150 <span >/per day</span></h6>
-             </div>
-             <div class="mini-card1">
-                <div class="gear-box1">
-                   <img src="https://cdn.prod.website-files.com/66dc179a1d6aa88848a4efac/6750396b4ddf4c46d50f6cc4_car-seat.svg" alt="">
-              <p>Seat <br><span>4</span></p>
-                </div>
-             
-              <div class="gear-box2">
-                <img src="https://cdn.prod.website-files.com/66dc179a1d6aa88848a4efac/6750396bcc42b344a21c720d_gearbox.svg" alt="">
-               <h5><p>Gearbox</p><br>Manual</h5>
-              </div>
-               <div class="gear-box3">
-                <img src="https://cdn.prod.website-files.com/66dc179a1d6aa88848a4efac/6750396bef54164e709fd920_luggage.svg" alt="">
-                <h4><p>Luggage</p><br>2 bags</h4>
-               </div>
-             </div>
-            </div>
-             <div class="car-sub-card1">
-              <img class="img" width="90%" src="https://cdn.prod.website-files.com/66dc179a1d6aa88848a4efb4/675d247c699d5c8508c0ae11_car-02.avif" alt="">
-             <div class="mini-car-card">
-               <h3>Spacious SUV</h3>
-               <h6>$195 <span >/per day</span></h6>
-             </div>
-             <div class="mini-card1">
-                <div class="gear-box1">
-                   <img src="https://cdn.prod.website-files.com/66dc179a1d6aa88848a4efac/6750396b4ddf4c46d50f6cc4_car-seat.svg" alt="">
-              <p>Seat <br><span>7</span></p>
-                </div>
-             
-              <div class="gear-box2">
-                <img src="https://cdn.prod.website-files.com/66dc179a1d6aa88848a4efac/6750396bcc42b344a21c720d_gearbox.svg" alt="">
-               <h5><p>Gearbox</p><br> Automatic</h5>
-              </div>
-               <div class="gear-box3">
-                <img src="https://cdn.prod.website-files.com/66dc179a1d6aa88848a4efac/6750396bef54164e709fd920_luggage.svg" alt="">
-                <h4><p>Luggage</p><br>4 bags</h4>
-               </div>
-             </div>
-            </div>
-             <div class="car-sub-card1">
-              <img class="img" width="90%" src="https://cdn.prod.website-files.com/66dc179a1d6aa88848a4efb4/675d249ddbaeb280005b7dac_car-03.avif" alt="">
-             <div class="mini-car-card">
-               <h3>Luxury Sedan</h3>
-               <h6>$210 <span >/per day</span></h6>
-             </div>
-             <div class="mini-card1">
-                <div class="gear-box1">
-                   <img src="https://cdn.prod.website-files.com/66dc179a1d6aa88848a4efac/6750396b4ddf4c46d50f6cc4_car-seat.svg" alt="">
-              <p>Seat <br><span>5</span></p>
-                </div>
-             
-              <div class="gear-box2">
-                <img src="https://cdn.prod.website-files.com/66dc179a1d6aa88848a4efac/6750396bcc42b344a21c720d_gearbox.svg" alt="">
-               <h5><p>Gearbox</p><br> Automatic</h5>
-              </div>
-               <div class="gear-box3">
-                <img src="https://cdn.prod.website-files.com/66dc179a1d6aa88848a4efac/6750396bef54164e709fd920_luggage.svg" alt="">
-                <h4><p>Luggage</p><br>2 bags</h4>
-               </div>
-             </div>
-            </div>
-              <div class="car-sub-card1">
-              <img class="img" width="90%" src="https://cdn.prod.website-files.com/66dc179a1d6aa88848a4efb4/6791feb6870fc170aa4a2e67_car-08.png" alt="">
-             <div class="mini-car-card">
-               <h3>Mercedes</h3>
-               <h6>$150 <span >/per day</span></h6>
-             </div>
-             <div class="mini-card1">
-                <div class="gear-box1">
-                   <img src="https://cdn.prod.website-files.com/66dc179a1d6aa88848a4efac/6750396b4ddf4c46d50f6cc4_car-seat.svg" alt="">
-              <p>Seat <br><span>5</span></p>
-                </div>
-             
-              <div class="gear-box2">
-                <img src="https://cdn.prod.website-files.com/66dc179a1d6aa88848a4efac/6750396bcc42b344a21c720d_gearbox.svg" alt="">
-               <h5><p>Gearbox</p><br>Manual</h5>
-              </div>
-               <div class="gear-box3">
-                <img src="https://cdn.prod.website-files.com/66dc179a1d6aa88848a4efac/6750396bef54164e709fd920_luggage.svg" alt="">
-                <h4><p>Luggage</p><br>2 bags</h4>
-               </div>
-             </div>
-            </div>
+          <div class="gear-box3">
+            <img src="https://cdn.prod.website-files.com/66dc179a1d6aa88848a4efac/6750396bef54164e709fd920_luggage.svg"
+              alt="">
+            <h4>
+              <p>Luggage</p><br>3 bags
+            </h4>
           </div>
-   </section>
+        </div>
+      </div>
+      <div class="car-sub-card2">
+        <img class="img" width="90%"
+          src="https://cdn.prod.website-files.com/66dc179a1d6aa88848a4efb4/675d246a08777aecdb41d97f_car-01.avif" alt="">
+        <div class="mini-car-card2">
+          <h3>Compact city cruiser</h3>
+          <h6>$150 <span>/per day</span></h6>
+        </div>
+        <div class="mini-card1">
+          <div class="gear-box1">
+            <img src="https://cdn.prod.website-files.com/66dc179a1d6aa88848a4efac/6750396b4ddf4c46d50f6cc4_car-seat.svg"
+              alt="">
+            <p>Seat <br><span>4</span></p>
+          </div>
+
+          <div class="gear-box2">
+            <img src="https://cdn.prod.website-files.com/66dc179a1d6aa88848a4efac/6750396bcc42b344a21c720d_gearbox.svg"
+              alt="">
+            <h5>
+              <p>Gearbox</p><br>Manual
+            </h5>
+          </div>
+          <div class="gear-box3">
+            <img src="https://cdn.prod.website-files.com/66dc179a1d6aa88848a4efac/6750396bef54164e709fd920_luggage.svg"
+              alt="">
+            <h4>
+              <p>Luggage</p><br>2 bags
+            </h4>
+          </div>
+        </div>
+      </div>
+      <div class="car-sub-card3">
+        <img class="img" width="90%"
+          src="https://cdn.prod.website-files.com/66dc179a1d6aa88848a4efb4/675d247c699d5c8508c0ae11_car-02.avif" alt="">
+        <div class="mini-car-card3">
+          <h3>Spacious SUV</h3>
+          <h6>$195 <span>/per day</span></h6>
+        </div>
+        <div class="mini-card1">
+          <div class="gear-box1">
+            <img src="https://cdn.prod.website-files.com/66dc179a1d6aa88848a4efac/6750396b4ddf4c46d50f6cc4_car-seat.svg"
+              alt="">
+            <p>Seat <br><span>7</span></p>
+          </div>
+
+          <div class="gear-box2">
+            <img src="https://cdn.prod.website-files.com/66dc179a1d6aa88848a4efac/6750396bcc42b344a21c720d_gearbox.svg"
+              alt="">
+            <h5>
+              <p>Gearbox</p><br> Automatic
+            </h5>
+          </div>
+          <div class="gear-box3">
+            <img src="https://cdn.prod.website-files.com/66dc179a1d6aa88848a4efac/6750396bef54164e709fd920_luggage.svg"
+              alt="">
+            <h4>
+              <p>Luggage</p><br>4 bags
+            </h4>
+          </div>
+        </div>
+      </div>
+      <div class="car-sub-card4">
+        <img class="img" width="90%"
+          src="https://cdn.prod.website-files.com/66dc179a1d6aa88848a4efb4/675d249ddbaeb280005b7dac_car-03.avif" alt="">
+        <div class="mini-car-card4">
+          <h3>Luxury Sedan</h3>
+          <h6>$210 <span>/per day</span></h6>
+        </div>
+        <div class="mini-card1">
+          <div class="gear-box1">
+            <img src="https://cdn.prod.website-files.com/66dc179a1d6aa88848a4efac/6750396b4ddf4c46d50f6cc4_car-seat.svg"
+              alt="">
+            <p>Seat <br><span>5</span></p>
+          </div>
+
+          <div class="gear-box2">
+            <img src="https://cdn.prod.website-files.com/66dc179a1d6aa88848a4efac/6750396bcc42b344a21c720d_gearbox.svg"
+              alt="">
+            <h5>
+              <p>Gearbox</p><br> Automatic
+            </h5>
+          </div>
+          <div class="gear-box3">
+            <img src="https://cdn.prod.website-files.com/66dc179a1d6aa88848a4efac/6750396bef54164e709fd920_luggage.svg"
+              alt="">
+            <h4>
+              <p>Luggage</p><br>2 bags
+            </h4>
+          </div>
+        </div>
+      </div>
+      <div class="car-sub-card5">
+        <img class="img" width="90%"
+          src="https://cdn.prod.website-files.com/66dc179a1d6aa88848a4efb4/6791feb6870fc170aa4a2e67_car-08.png" alt="">
+        <div class="mini-car-card5">
+          <h3>Mercedes</h3>
+          <h6>$150 <span>/per day</span></h6>
+        </div>
+        <div class="mini-card1">
+          <div class="gear-box1">
+            <img src="https://cdn.prod.website-files.com/66dc179a1d6aa88848a4efac/6750396b4ddf4c46d50f6cc4_car-seat.svg"
+              alt="">
+            <p>Seat <br><span>5</span></p>
+          </div>
+
+          <div class="gear-box2">
+            <img src="https://cdn.prod.website-files.com/66dc179a1d6aa88848a4efac/6750396bcc42b344a21c720d_gearbox.svg"
+              alt="">
+            <h5>
+              <p>Gearbox</p><br>Manual
+            </h5>
+          </div>
+          <div class="gear-box3">
+            <img src="https://cdn.prod.website-files.com/66dc179a1d6aa88848a4efac/6750396bef54164e709fd920_luggage.svg"
+              alt="">
+            <h4>
+              <p>Luggage</p><br>2 bags
+            </h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="forth-section">
+    <h1>Our rental <br> categories</h1>
+    <div class="category-card">
+      <div class="category-box1">
+        <img src="https://cdn.prod.website-files.com/66dc179a1d6aa88848a4efb4/67503ea9703bac17ebec227b_category-04.avif"
+          alt="">
+        <h3>Business</h3>
+      </div>
+      <div class="category-box2">
+        <img src="https://cdn.prod.website-files.com/66dc179a1d6aa88848a4efb4/67503e9df37eca688967d1ab_category-03.avif"
+          alt="">
+        <h3>Family</h3>
+      </div>
+      <div class="category-box3">
+        <img src="https://cdn.prod.website-files.com/66dc179a1d6aa88848a4efb4/67503e881f624690a4acbec0_category-02.avif"
+          alt="">
+        <h3>Adventure</h3>
+      </div>
+      <div class="category-box4">
+        <img src="https://cdn.prod.website-files.com/66dc179a1d6aa88848a4efb4/67503e655e4774eb97cc82ea_category-01.avif"
+          alt="">
+        <h3>Wedding</h3>
+      </div>
+    </div>
+  </section>
 </body>
+
 </html>

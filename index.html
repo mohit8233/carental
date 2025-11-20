@@ -8,19 +8,21 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
   <style>
-    @media (min-width) {
+    /* @media (min-width) {
       
-    }
+    } */
     @media (max-width:992px) and (min-width:851px) {
 
-      nav {
+      .side-menu{
         display: none;
       }
 
-      .span {
-        display: block;
-      }
-
+     .menu-icon{
+    display: block;
+  }
+.close-btn{
+  display: block;
+}
       .box1 {
         display: grid;
         grid-template-columns: auto auto;
@@ -103,14 +105,16 @@
     }
 
     @media (max-width:850px) and (min-width:766px) {
-        nav {
+        .side-menu{
         display: none;
       }
 
-      .span {
-        display: block;
-      }
-
+       .menu-icon{
+    display: block;
+  }
+  .close-btn{
+  display: block;
+}
       .box1 {
         display: grid;
         grid-template-columns: auto auto;
@@ -237,14 +241,16 @@
     }
 
     @media (max-width:766px) and (min-width:680px) {
-      nav {
+       .side-menu{
         display: none;
       }
 
-      .span {
-        display: block;
-      }
-
+       .menu-icon{
+    display: block;
+  }
+.close-btn{
+  display: block;
+}
       .box1 {
         display: grid;
         grid-template-columns: auto auto;
@@ -378,15 +384,40 @@
         border-radius: 100%;
         width: 20vw;
       }
+       .menu-icon{
+    display: block;
+    z-index: 50;
+  }
+
+  /* By default menu hidden */
+  .side-menu{
+    position: fixed;
+    top: 0;
+    right: -70%;
+    width: 70%;
+    height: 100vh;
+    padding-top: 80px;
+    box-shadow: -5px 0 10px rgba(0,0,0,0.4);
+  }
+
+  .side-menu ul{
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  /* When checkbox checked → open menu */
+  #menu-toggle:checked ~ .side-menu{
+    right: 0;
+  }
     }
     @media (max-width:680px) and (min-width:567px) {
-      nav {
+        .side-menu{
         display: none;
       }
 
-      .span {
-        display: block;
-      }
+       .menu-icon{
+    display: block;
+  }
 
       .box1 {
         display: grid;
@@ -523,6 +554,31 @@
         border-radius: 100%;
         width: 20vw;
       }
+       .menu-icon{
+    display: block;
+    z-index: 50;
+  }
+
+  /* By default menu hidden */
+  .side-menu{
+    position: fixed;
+    top: 0;
+    right: -70%;
+    width: 70%;
+    height: 100vh;
+    padding-top: 80px;
+    box-shadow: -5px 0 10px rgba(0,0,0,0.4);
+  }
+
+  .side-menu ul{
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  /* When checkbox checked → open menu */
+  #menu-toggle:checked ~ .side-menu{
+    right: 0;
+  }
     }
 
     @media (max-width:600px) {
@@ -537,17 +593,44 @@
       .car-sub-card1 {
         width: auto;
       }
+       .menu-icon{
+    display: block;
+    z-index: 50;
+  }
+
+  /* By default menu hidden */
+  .side-menu{
+    position: fixed;
+    top: 0;
+    right: -70%;
+    width: 70%;
+    height: 100vh;
+    padding-top: 80px;
+    box-shadow: -5px 0 10px rgba(0,0,0,0.4);
+  }
+
+  .side-menu ul{
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  /* When checkbox checked → open menu */
+  #menu-toggle:checked ~ .side-menu{
+    right: 0;
+  }
     }
 
     @media (max-width:566px) and (min-width:450px) {
-      nav {
+       .side-menu{
         display: none;
       }
 
-      .span {
-        display: block;
-      }
-
+       .menu-icon{
+    display: block;
+  }
+.close-btn{
+  display: block;
+}
       .second-section h1 {
         width: 90vw;
         margin-right: 8px;
@@ -698,17 +781,44 @@
         border-radius: 100%;
         width: 20vw;
       }
+       .menu-icon{
+    display: block;
+    z-index: 50;
+  }
+
+  /* By default menu hidden */
+  .side-menu{
+    position: fixed;
+    top: 0;
+    right: -70%;
+    width: 70%;
+    height: 100vh;
+    padding-top: 80px;
+    box-shadow: -5px 0 10px rgba(0,0,0,0.4);
+  }
+
+  .side-menu ul{
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  /* When checkbox checked → open menu */
+  #menu-toggle:checked ~ .side-menu{
+    right: 0;
+  }
     }
 
     @media (max-width:450px) and (min-width:340px) {
-      nav {
+        .side-menu{
         display: none;
       }
 
-      .span {
-        display: block;
-      }
-
+       .menu-icon{
+    display: block;
+  }
+.close-btn{
+  display: block;
+}
       .box1 {
         display: grid;
         grid-template-columns: auto;
@@ -949,6 +1059,31 @@
         width: 90vw;
         /* margin-left: 30px; */
       }
+       .menu-icon{
+    display: block;
+    z-index: 50;
+  }
+
+  /* By default menu hidden */
+  .side-menu{
+    position: fixed;
+    top: 0;
+    right: -70%;
+    width: 70%;
+    height: 100vh;
+    padding-top: 80px;
+    box-shadow: -5px 0 10px rgba(0,0,0,0.4);
+  }
+
+  .side-menu ul{
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  /* When checkbox checked → open menu */
+  #menu-toggle:checked ~ .side-menu{
+    right: 0;
+  }
 
     }
 
@@ -959,14 +1094,40 @@
         gap: 70px;
       }
 
-      nav {
+        .side-menu{
         display: none;
       }
+.close-btn{
+  display: block;
+}
+       .menu-icon{
+    display: block;
+  }
+ .menu-icon{
+    display: block;
+    z-index: 50;
+  }
 
-      .span {
-        display: block;
-      }
+  /* By default menu hidden */
+  .side-menu{
+    position: fixed;
+    top: 0;
+    right: -70%;
+    width: 70%;
+    height: 100vh;
+    padding-top: 80px;
+    box-shadow: -5px 0 10px rgba(0,0,0,0.4);
+  }
 
+  .side-menu ul{
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  /* When checkbox checked → open menu */
+  #menu-toggle:checked ~ .side-menu{
+    right: 0;
+  }
       .first-section {
         background-size: cover;
         background-position: center;
@@ -1259,14 +1420,41 @@
     }
 
     @media (max-width:290px) and (min-width:250px) {
-      nav {
+        .side-menu{
         display: none;
       }
 
-      .span {
-        display: block;
-      }
+       .menu-icon{
+    display: block;
+  }
+.close-btn{
+  display: block;
+}
+ .menu-icon{
+    display: block;
+    z-index: 50;
+  }
 
+  /* By default menu hidden */
+  .side-menu{
+    position: fixed;
+    top: 0;
+    right: -70%;
+    width: 70%;
+    height: 100vh;
+    padding-top: 80px;
+    box-shadow: -5px 0 10px rgba(0,0,0,0.4);
+  }
+
+  .side-menu ul{
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  /* When checkbox checked → open menu */
+  #menu-toggle:checked ~ .side-menu{
+    right: 0;
+  }
       .box1 {
         display: grid;
         grid-template-columns: auto;
@@ -1329,13 +1517,13 @@
     }
 
     @media (max-width:250px) and (min-width:100px) {
-      nav {
+      .side-menu{
         display: none;
       }
 
-      .span {
-        display: block;
-      }
+       .menu-icon{
+    display: block;
+  }
 
       .box1 {
         display: grid;
@@ -1398,23 +1586,60 @@
         font-size: 20px;
 
       }
+       .menu-icon{
+    display: block;
+    z-index: 50;
+  }
+
+  /* By default menu hidden */
+  .side-menu{
+    position: fixed;
+    top: 0;
+    right: -70%;
+    width: 70%;
+    height: 100vh;
+    padding-top: 80px;
+    box-shadow: -5px 0 10px rgba(0,0,0,0.4);
+  }
+
+  .side-menu ul{
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  /* When checkbox checked → open menu */
+  #menu-toggle:checked ~ .side-menu{
+    right: 0;
+  }
     }
   </style>
 </head>
 
 <body>
-  <header>
-    <div class="logo"><img src="./Screenshot_2025-10-31_221352-removebg-preview.png" alt=""></div>
-    <nav>
-      <ul>
-        <li><a href="ome">Home</a></li>
-        <li><a href="About">About</a></li>
-        <li><a href="Cars">Cars</a></li>
-        <li><a href="Contact">Contact</a></li>
-      </ul>
-    </nav>
-    <span class="span"><i class="fa-solid fa-bars" style="color: #000000;"></i></span>
-  </header>
+ <header>
+  <div class="logo">
+    <img src="./Screenshot_2025-10-31_221352-removebg-preview.png" alt="">
+  </div>
+
+  <!-- Toggle Checkbox -->
+  <input type="checkbox" id="menu-toggle">
+
+  <!-- Bars Icon -->
+  <label for="menu-toggle" class="menu-icon">
+    ☰
+  </label>
+
+  <!-- Side Menu -->
+  <nav class="side-menu">
+    <ul>
+      <li><a href="home">Home</a></li>
+      <li><a href="about">About</a></li>
+      <li><a href="cars">Cars</a></li>
+      <li><a href="contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
 
   <section class="first-section">
     <div class="box">

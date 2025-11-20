@@ -12,13 +12,20 @@
 .logo img{
   width: 100px; 
 }
-nav{
+.side-menu{
     width: 50%;
     height: 50px;
     /* z-index: 100;    */
     background-color: rgb(4, 41, 1);
     margin-right: 40px;
     border-radius: 12px;
+}
+
+.side-menu{
+  background: teal;
+  
+  transition: 0.4s ease;
+  box-shadow: -5px 0 10px rgba(0,0,0,0.3);
 }
 ul{
     display: flex;
@@ -80,6 +87,127 @@ header {
   align-items: center;
   padding: 20px 60px;
   z-index: 10;
+}
+#menu-toggle{
+  display: none;
+}
+.menu-icon{
+  font-size: 32px;
+  cursor: pointer;
+  display: none;
+  color: white;
+}
+
+.menu-icon i{
+  font-size: 32px;
+}
+#menu-toggle:checked ~ .side-menu{
+  right: 0;
+}
+/* RESET */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+/* HEADER */
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+/* LOGO */
+.logo img{
+  width: 100px;
+}
+
+/* Hide checkbox */
+#menu-toggle{
+  display: none;
+}
+
+/* MENU ICON */
+.menu-icon{
+  font-size: 35px;
+  cursor: pointer;
+  display: none; /* mobile me show hoga */
+  color: black;
+}
+
+/* SIDE MENU */
+.side-menu{
+  background: teal;
+  width: 50%;
+  height: 50px;
+  border-radius: 12px;
+  transition: 0.4s ease;
+}
+
+.side-menu ul{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  list-style: none;
+}
+
+.side-menu ul li a{
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.side-menu ul li a:hover{
+  color: rgb(190, 126, 43);
+}
+
+
+/* ------------------------- */
+/* RESPONSIVE MENU (MOBILE) */
+/* ------------------------- */
+
+/* @media(max-width: 768px){
+
+  /* Show menu icon */
+  /* .menu-icon{
+    display: block;
+    z-index: 50;
+  }
+
+  /* By default menu hidden */
+  /* .side-menu{
+    position: fixed;
+    top: 0;
+    right: -70%;
+    width: 70%;
+    height: 100vh;
+    padding-top: 80px;
+    box-shadow: -5px 0 10px rgba(0,0,0,0.4);
+  }
+
+  .side-menu ul{
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  /* When checkbox checked → open menu */
+  /* #menu-toggle:checked ~ .side-menu{
+    right: 0;
+  } */ */
+/* }  */ */
+
+.close-btn{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 35px;
+  cursor: pointer;
+  color: white;
+  display: none;
 }
 .box h1{
  /* position: absolute; */
